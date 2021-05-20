@@ -8,7 +8,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: Raleway;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: linear-gradient(to right, #f2aa4cff 50%, #101820ff 50%);
 }
 
 a {
@@ -18,4 +20,96 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Navbar */
+.header {
+  color: #101820ff;
+  font-weight: bold;
+  padding: 5vh;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  animation: rotateZ 2s linear infinite;
+}
+
+.donate {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  filter: invert(0.5);
+}
+
+.donate:hover {
+  filter: invert(0);
+}
+.donate .icon {
+  filter: brightness(0) invert(1);
+}
+
+@keyframes rotateZ {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Footer */
+
+.footer {
+  padding: 5vh;
+  width: 100%;
+  height: 7vh;
+  font-size: 2vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contribute {
+  color: #828282;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contribute .icon {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  filter: invert(0.5);
+}
+
+.contribute:hover .icon {
+  filter: invert(0);
+}
+
+.contribute:hover {
+  color: #fff;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 767px) {
+  .header {
+    padding-bottom: 0;
+  }
+  .footer {
+    font-size: 1.5vh;
+  }
 }
