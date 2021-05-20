@@ -39,22 +39,6 @@ a {
   animation: rotateZ 2s linear infinite;
 }
 
-.donate {
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  filter: invert(0.5);
-}
-
-.donate:hover {
-  filter: invert(0);
-}
-.donate .icon {
-  filter: brightness(0) invert(1);
-}
-
 @keyframes rotateZ {
   0% {
     transform: rotateY(0deg);
