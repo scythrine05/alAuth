@@ -48,7 +48,6 @@
 .newModal {
   background: #fff;
   box-shadow: -6px 6px #fff;
-  transform: translate(4px, -4px);
   width: 55%;
   height: 50%;
   display: flex;
@@ -71,7 +70,6 @@
   font-family: "Lato";
   font-size: 2.3vh;
   border: 2px solid #101820ff;
-  transform: translate(4px, -4px);
   box-shadow: -4px 4px #101820ff;
   height: 5vh;
   width: 100%;
@@ -95,7 +93,6 @@
   font-size: 2vh;
   color: #101820ff;
   border: 2px solid #101820ff;
-  transform: translate(4px, -4px);
   box-shadow: -4px 4px #101820ff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -103,7 +100,6 @@
   transition: all 0.3s ease;
 }
 .modalOpt:hover {
-  transform: translate(0, 0);
   box-shadow: none;
   background: #101820ff;
   color: #fff;
@@ -149,7 +145,6 @@
   margin-bottom: 5vh;
   background: #fff;
   box-shadow: -6px 6px #fff;
-  transform: translate(4px, -4px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -185,7 +180,6 @@
   font-size: 2vh;
   color: #101820ff;
   border: 2px solid #101820ff;
-  transform: translate(4px, -4px);
   box-shadow: -4px 4px #101820ff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -196,7 +190,6 @@
   box-shadow: none;
   background: #101820ff;
   color: #fff;
-  transform: translate(0, 0);
 }
 
 .opt {
@@ -207,7 +200,6 @@
   font-size: 2.6vh;
   color: #fff;
   border: 2px solid #fff;
-  transform: translate(4px, -4px);
   box-shadow: -4px 4px #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -215,7 +207,6 @@
   transition: all 0.3s ease;
 }
 .opt:hover {
-  transform: translate(0, 0);
   box-shadow: none;
   background: #fff;
   color: #101820ff;
