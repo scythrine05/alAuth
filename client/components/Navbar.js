@@ -5,12 +5,12 @@ export default function Navbar() {
   return (
     <>
       <header className="header">
-        <div>
-          {" "}
-          <Link href="/">
+        <Link href="/">
+          <div>
+            {" "}
             <Image className="logo" src="/logo.png" height={70} width={60} />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </header>
     </>
   );

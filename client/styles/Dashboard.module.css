@@ -1,0 +1,148 @@
+.profile {
+  top: 3%;
+  right: 3%;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  filter: invert(0.5);
+}
+
+.profile:hover {
+  filter: invert(1);
+}
+.profile .icon {
+  filter: brightness(0) invert(1);
+}
+
+.main {
+  padding: 0 0 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 10vh 0 0 0;
+  color: #fff;
+  line-height: 1.15;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.title span {
+  color: #101820ff;
+}
+.content {
+  display: flex;
+  margin-top: 5vh;
+  width: 70%;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.project {
+  width: 60%;
+}
+.each {
+  padding: 5vh;
+  height: 45vh;
+  margin-bottom: 5vh;
+  background: #fff;
+  box-shadow: -6px 6px #fff;
+  transform: translate(4px, -4px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.proHead {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.del_icon {
+  filter: invert(0.5);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.del_icon:hover {
+  filter: invert(0);
+}
+.option {
+  display: flex;
+  flex-direction: column;
+}
+.show {
+  cursor: pointer;
+  padding: 1.5vh;
+  margin-top: 3vh;
+  text-align: center;
+  font-size: 2vh;
+  color: #101820ff;
+  border: 2px solid #101820ff;
+  transform: translate(4px, -4px);
+  box-shadow: -4px 4px #101820ff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.show:hover {
+  box-shadow: none;
+  background: #101820ff;
+  color: #fff;
+  transform: translate(0, 0);
+}
+
+.new {
+  cursor: pointer;
+  margin: 0 2vh 10vh 0;
+  padding: 2vh;
+  text-align: center;
+  font-size: 2.6vh;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: -4px 4px #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.new:hover {
+  box-shadow: none;
+  background: #fff;
+  color: #101820ff;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .content {
+    flex-direction: column-reverse;
+    width: 90%;
+    font-size: 2vh;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .project {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .new {
+    padding: 2vh;
+    font-size: 2vh;
+    font-weight: normal;
+    margin-bottom: 3vh;
+  }
+}

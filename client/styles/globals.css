@@ -34,8 +34,11 @@ a {
   align-items: center;
 }
 
-.logo {
+.header div {
   cursor: pointer;
+}
+
+.logo {
   animation: rotateZ 2s linear infinite;
 }
 

@@ -37,15 +37,17 @@ export default function Home() {
           <Link href="/docs">
             <span className={styles.explore}>Get started</span>
           </Link>
-          <span className={styles.signin}>
-            <div>Sign in with</div>
-            <Image
-              className={styles.icon}
-              src="/icons/github-icon.png"
-              height={26}
-              width={22}
-            />
-          </span>
+          <Link href="/dashboard">
+            <span className={styles.signin}>
+              <div>Sign up with</div>
+              <Image
+                className={styles.icon}
+                src="/icons/github-icon.png"
+                height={26}
+                width={22}
+              />
+            </span>
+          </Link>
         </div>
       </main>
     </div>
