@@ -62,41 +62,44 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10vh;
-  padding-top: 20vh;
+  padding: 4rem;
+  padding-top: 8rem;
 }
 
 .modalForm {
-  padding: 1vh;
+  padding: 10px;
   font-family: "Lato";
   font-size: 2.3vh;
   border: 2px solid #101820ff;
-  box-shadow: -4px 4px #101820ff;
-  height: 5vh;
+  height: 3em;
   width: 100%;
-  margin-bottom: 3vh;
+  margin-bottom: 2em;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
+.newModal form h2 {
+  font-size: 1.7em;
+}
+
 .modalForm:focus {
   outline: none;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow: -4px 4px #101820ff;
 }
 
 .modalOption {
   display: flex;
-  padding: 2vh;
 }
 .modalOpt {
   cursor: pointer;
-  margin: 0 2vh 10vh 0;
-  padding: 2vh;
+  margin: 0 2em 4rem 0;
+  padding: 1em;
   text-align: center;
   font-size: 2vh;
+  background: #fff;
   color: #101820ff;
   border: 2px solid #101820ff;
   box-shadow: -4px 4px #101820ff;
@@ -248,19 +251,20 @@
   }
   .modal {
     align-items: flex-start;
-    padding-top: 5vh;
+    padding-top: 4rem;
+    background: rgba(16, 24, 32, 1);
   }
   .newModal {
     width: 80%;
     height: 40%;
   }
   .modalOpt {
-    font-size: 1.7vh;
+    font-size: 0.6rem;
   }
   .modalForm {
-    font-size: 2vh;
+    font-size: 0.65rem;
   }
   .newModal form h2 {
-    font-size: 3vh;
+    font-size: 1rem;
   }
 }
