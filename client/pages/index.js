@@ -11,7 +11,7 @@ export default function Home() {
         <title>alAuth</title>
         <meta
           name="description"
-          content="alAuth is a trusted AuthN and AuthZ providing service create for ambitious developers"
+          content="alAuth is a trusted authentication providing service create for ambitious developers"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -31,7 +31,7 @@ export default function Home() {
           </h1>
         </Fade>
         <p className={styles.description}>
-          <span> trusted AuthN/AuthZ </span> service for developers
+          <span> trusted authentication </span> service for developers
         </p>
         <div className={styles.btn}>
           <Link href="/docs">
