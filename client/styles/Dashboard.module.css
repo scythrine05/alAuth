@@ -256,15 +256,17 @@
   }
   .newModal {
     width: 80%;
-    height: 40%;
+    height: 18em;
   }
+
   .modalOpt {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
   .modalForm {
-    font-size: 0.65rem;
+    width: 19em;
+    font-size: 0.8rem;
   }
   .newModal form h2 {
-    font-size: 1rem;
+    font-size: 1.42rem;
   }
 }
