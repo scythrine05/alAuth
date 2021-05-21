@@ -10,6 +10,7 @@ export default function Home() {
           content="user-scalable=no,initial-scale=1,maximum-scale=1"
         />
         <meta name="description" content="Setting up alAuth" />
+        <script type="text/javascript" src="/static/viewport.js"></script>
         <title>alAuth | Getting Started</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>

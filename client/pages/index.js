@@ -12,6 +12,7 @@ export default function Home() {
           name="viewport"
           content="user-scalable=no,initial-scale=1,maximum-scale=1"
         />
+        <script type="text/javascript" src="/static/viewport.js"></script>
         <title>alAuth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
