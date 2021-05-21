@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Dashboard.module.css";
+import $ from "jquery";
+
 export default function Projects() {
   const [modal, setModal] = useState("modalHide");
 

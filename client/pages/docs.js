@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Docs.module.css";
+import $ from "jquery";
 
 export default function Home() {
   return (
