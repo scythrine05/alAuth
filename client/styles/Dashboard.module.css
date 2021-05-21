@@ -249,8 +249,13 @@
   .del_icon {
     filter: invert(0);
   }
+  .modal {
+    align-items: flex-start;
+    padding-top: 5vh;
+  }
   .newModal {
     width: 80%;
+    height: 40%;
   }
   .modalOpt {
     font-size: 1.7vh;
