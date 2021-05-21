@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>alAuht | Getting Started</title>
+        <title>alAuth | Getting Started</title>
         <meta name="description" content="Setting up alAuth" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

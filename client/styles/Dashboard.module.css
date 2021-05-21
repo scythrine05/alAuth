@@ -1,4 +1,8 @@
 .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 3%;
   right: 3%;
   position: absolute;
@@ -15,6 +19,95 @@
 }
 .profile .icon {
   filter: brightness(0) invert(1);
+}
+
+.profile span {
+  margin-top: 1vh;
+  font-size: 2vh;
+  font-weight: bold;
+  font-family: "Lato";
+}
+
+.modal {
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(16, 24, 32, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalHide {
+  display: none;
+}
+
+.newModal {
+  background: #fff;
+  box-shadow: -6px 6px #fff;
+  transform: translate(4px, -4px);
+  width: 55%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newModal form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10vh;
+  padding-top: 20vh;
+}
+
+.modalForm {
+  padding: 1vh;
+  font-family: "Lato";
+  font-size: 2.3vh;
+  border: 2px solid #101820ff;
+  transform: translate(4px, -4px);
+  box-shadow: -4px 4px #101820ff;
+  height: 5vh;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.modalForm:focus {
+  outline: none;
+  border-radius: 0;
+}
+
+.modalOption {
+  display: flex;
+  padding: 2vh;
+}
+.modalOpt {
+  cursor: pointer;
+  margin: 0 2vh 10vh 0;
+  padding: 2vh;
+  text-align: center;
+  font-size: 2vh;
+  color: #101820ff;
+  border: 2px solid #101820ff;
+  transform: translate(4px, -4px);
+  box-shadow: -4px 4px #101820ff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.modalOpt:hover {
+  transform: translate(0, 0);
+  box-shadow: none;
+  background: #101820ff;
+  color: #fff;
+  font-weight: bold;
 }
 
 .main {
@@ -43,13 +136,15 @@
   margin-top: 5vh;
   width: 70%;
   justify-content: space-between;
-  align-content: flex-start;
 }
 .project {
   width: 60%;
 }
+
 .each {
   padding: 5vh;
+  font-weight: bold;
+  font-family: "Lato";
   height: 45vh;
   margin-bottom: 5vh;
   background: #fff;
@@ -80,6 +175,7 @@
 .option {
   display: flex;
   flex-direction: column;
+  padding: 2vh;
 }
 .show {
   cursor: pointer;
@@ -103,7 +199,7 @@
   transform: translate(0, 0);
 }
 
-.new {
+.opt {
   cursor: pointer;
   margin: 0 2vh 10vh 0;
   padding: 2vh;
@@ -111,13 +207,15 @@
   font-size: 2.6vh;
   color: #fff;
   border: 2px solid #fff;
+  transform: translate(4px, -4px);
   box-shadow: -4px 4px #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.new:hover {
+.opt:hover {
+  transform: translate(0, 0);
   box-shadow: none;
   background: #fff;
   color: #101820ff;
@@ -125,6 +223,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .profile span {
+    font-size: 1.5vh;
+  }
   .title {
     font-size: 1.8rem;
   }
@@ -139,10 +240,25 @@
     margin-top: 5%;
     width: 100%;
   }
-  .new {
+  .opt {
     padding: 2vh;
     font-size: 2vh;
     font-weight: normal;
     margin-bottom: 3vh;
+  }
+  .del_icon {
+    filter: invert(0);
+  }
+  .newModal {
+    width: 80%;
+  }
+  .modalOpt {
+    font-size: 1.7vh;
+  }
+  .modalForm {
+    font-size: 2vh;
+  }
+  .newModal form h2 {
+    font-size: 3vh;
   }
 }
