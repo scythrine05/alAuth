@@ -53,6 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .newModal form {
@@ -243,6 +244,7 @@
   .modal {
     align-items: flex-start;
     padding-top: 5vh;
+    background: rgba(16, 24, 32, 1);
   }
   .newModal {
     width: 80%;
