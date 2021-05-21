@@ -8,8 +8,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="user-scalable=no,initial-scale=1,maximum-scale=1"
+        />
         <title>alAuth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
