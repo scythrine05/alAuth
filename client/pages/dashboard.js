@@ -77,7 +77,7 @@ export default function Projects() {
               New Project
             </span>
             <Link href="/docs">
-              <span className={styles.opt}>Docs</span>
+              <span className={styles.opt2}>Docs</span>
             </Link>
           </div>
         </div>
