@@ -56,26 +56,42 @@
   justify-content: space-between;
 }
 .project {
-  width: 60%;
+  width: 55%;
 }
 
 .each {
-  padding: 5vh;
+  padding: 4vh;
   font-weight: bold;
   font-family: "Lato";
-  height: 45vh;
-  margin-bottom: 5vh;
+  height: 39vh;
+  margin-bottom: 6vh;
   background: #fff;
   box-shadow: -6px 6px #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
+.each p {
+  font-size: 1em;
+}
+
+.each p:nth-child(2) span {
+  color: #009900;
+}
+.each p:nth-child(3) span {
+  color: #808080;
+}
 .proHead {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+
+.proHead h1 {
+  font-size: 2em;
+  font-weight: bold;
 }
 .del_icon {
   filter: invert(0.5);
@@ -96,7 +112,7 @@
 }
 .show {
   cursor: pointer;
-  padding: 1.5vh;
+  padding: 1vh 3vh;
   margin-top: 3vh;
   text-align: center;
   font-size: 2vh;
@@ -153,9 +169,21 @@
     margin-top: 5%;
     width: 100%;
   }
+  .each {
+    height: 17em;
+  }
+  .proHead h1 {
+    font-size: 1.8em;
+  }
+  .each p {
+    font-size: 0.9em;
+  }
+  .show {
+    font-size: 0.9em;
+  }
   .opt {
-    padding: 2vh;
-    font-size: 2vh;
+    padding: 0.8em;
+    font-size: 0.9em;
     font-weight: normal;
     margin-bottom: 3vh;
   }

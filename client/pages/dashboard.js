@@ -6,45 +6,7 @@ import styles from "../styles/Dashboard.module.css";
 import NewProject from "../components/NewProject";
 
 export default function Projects() {
-  const [modal, setModal] = useState("modalHide");
   const [modalShow, setModalShow] = useState(false);
-
-  const NewPProject = () => {
-    return (
-      <>
-        <div className={styles[modal]}>
-          <div className={styles.newModal}>
-            <form>
-              <h2>New Project</h2>
-              <input
-                type="text"
-                placeholder="Project Name"
-                className={styles.modalForm}
-              />
-              <input
-                type="password"
-                placeholder="Project Password"
-                className={styles.modalForm}
-              />
-              <div className={styles.modalOption}>
-                {" "}
-                <button disabled type="submit" className={styles.modalOpt}>
-                  Create
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setModal("modalHide")}
-                  className={styles.modalOpt}
-                >
-                  Close
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </>
-    );
-  };
 
   return (
     <>
