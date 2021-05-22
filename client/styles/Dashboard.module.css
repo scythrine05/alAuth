@@ -132,7 +132,7 @@
 
 .opt {
   cursor: pointer;
-  margin: 0 0.8em 10vh 0;
+  margin: 0 0.8em 2em 0;
   padding: 2vh;
   text-align: center;
   font-size: 2.6vh;
@@ -185,7 +185,6 @@
     padding: 0.8em;
     font-size: 1em;
     font-weight: normal;
-    margin-bottom: 3vh;
   }
   .del_icon {
     filter: invert(0);
