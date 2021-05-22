@@ -12,6 +12,10 @@ export default function Home() {
           name="viewport"
           content="user-scalable=no,initial-scale=1,maximum-scale=1"
         />
+        <meta
+          name="description"
+          content="trusted authenication service provided for ambitious developers"
+        />
         <title>alAuth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -63,8 +63,19 @@ a {
   height: 7vh;
   font-size: 2vh;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: space-between;
+}
+.foot-links {
+  display: flex;
+  color: #101820ff;
+}
+.foot-links a {
+  margin: 0 1em;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .footer a {
   text-decoration: none;
@@ -199,8 +210,13 @@ a {
   .newModal form h2 {
     font-size: 1.42rem;
   }
-
-  .footer {
+  .foot-links {
+    margin: 0;
+  }
+  .foot-links a {
+    font-size: 0.6em;
+  }
+  .contribute {
     font-size: 0.6em;
   }
 }
