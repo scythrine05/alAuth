@@ -66,6 +66,9 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
+.footer a {
+  text-decoration: none;
+}
 .contribute {
   color: #828282;
   display: flex;
