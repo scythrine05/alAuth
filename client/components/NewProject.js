@@ -10,7 +10,7 @@ const NewProject = (props) => {
       centered
       className="new-modal"
     >
-      <Modal.Header closeButton>
+      <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
           New Project
         </Modal.Title>

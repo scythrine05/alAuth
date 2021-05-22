@@ -97,11 +97,16 @@ a {
 /* Modal */
 
 .modal-content {
+  background: #101820ff;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
   border-radius: 0%;
   border: none;
-  box-shadow: -4px 4px #fff;
+  box-shadow: -4px 4px #101820ff;
 }
 .modal-title {
+  color: #fff;
   font-size: 2em;
 }
 .modal-body {
@@ -112,7 +117,7 @@ a {
   padding: 10px;
   font-family: "Lato";
   font-size: 2.3vh;
-  border: 2px solid #101820ff;
+  border: 2px solid #fff;
   height: 3em;
   width: 100%;
   margin-bottom: 2em;
@@ -125,7 +130,7 @@ a {
 .modalForm:focus {
   outline: none;
   border-radius: 0;
-  box-shadow: -4px 4px #101820ff;
+  box-shadow: -4px 4px #fff;
 }
 
 .modalOption {
@@ -134,13 +139,13 @@ a {
 .modalOpt {
   cursor: pointer;
   margin: 0 2em 4rem 0;
-  padding: 1em;
+  padding: 0.6em 2em;
   text-align: center;
   font-size: 2vh;
-  background: #fff;
-  color: #101820ff;
-  border: 2px solid #101820ff;
-  box-shadow: -4px 4px #101820ff;
+  background: #101820ff;
+  color: #fff;
+  border: 1.5px solid #fff;
+  box-shadow: -4px 4px #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -148,8 +153,8 @@ a {
 }
 .modalOpt:hover {
   box-shadow: none;
-  background: #101820ff;
-  color: #fff;
+  background: #fff;
+  color: #101820ff;
   font-weight: bold;
 }
 
