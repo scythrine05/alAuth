@@ -12,8 +12,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: Raleway;
-  overflow-x: hidden;
-  overflow-y: auto;
   background: linear-gradient(to right, #f2aa4cff 50%, #101820ff 50%);
 }
 
