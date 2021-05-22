@@ -112,8 +112,8 @@
 }
 .show {
   cursor: pointer;
-  padding: 1vh 3vh;
-  margin-top: 3vh;
+  padding: 0.4em 1.4em;
+  margin-top: 1.5em;
   text-align: center;
   font-size: 2vh;
   color: #101820ff;
@@ -132,7 +132,7 @@
 
 .opt {
   cursor: pointer;
-  margin: 0 2vh 10vh 0;
+  margin: 0 0.8em 10vh 0;
   padding: 2vh;
   text-align: center;
   font-size: 2.6vh;
@@ -183,7 +183,7 @@
   }
   .opt {
     padding: 0.8em;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: normal;
     margin-bottom: 3vh;
   }
