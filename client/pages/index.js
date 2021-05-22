@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
-import $ from "jquery";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
           name="viewport"
           content="user-scalable=no,initial-scale=1,maximum-scale=1"
         />
-        <script type="text/javascript" src="/static/viewport.js"></script>
         <title>alAuth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>

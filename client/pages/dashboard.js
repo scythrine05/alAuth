@@ -3,12 +3,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Dashboard.module.css";
-import $ from "jquery";
+import NewProject from "../components/NewProject";
 
 export default function Projects() {
   const [modal, setModal] = useState("modalHide");
+  const [modalShow, setModalShow] = useState(false);
 
-  const NewProject = () => {
+  const NewPProject = () => {
     return (
       <>
         <div className={styles[modal]}>
@@ -52,11 +53,10 @@ export default function Projects() {
           name="viewport"
           content="user-scalable=no,initial-scale=1,maximum-scale=1"
         />
-        <script type="text/javascript" src="/static/viewport.js"></script>
         <title>alAuth | Dashboard</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NewProject class={modal} />
+      <NewProject show={modalShow} onHide={() => setModalShow(false)} />
       <div className={styles.profile}>
         <Image
           className="icon"
@@ -111,12 +111,7 @@ export default function Projects() {
           </div>
           <div className={styles.option}>
             {" "}
-            <span
-              className={styles.opt}
-              onClick={() => {
-                setModal("modal");
-              }}
-            >
+            <span className={styles.opt} onClick={() => setModalShow(true)}>
               New Project
             </span>
             <Link href="/docs">
