@@ -26,7 +26,6 @@ a {
 
 /* Navbar */
 .header {
-  color: #101820ff;
   font-weight: bold;
   padding: 5vh;
   width: 100%;
@@ -41,6 +40,7 @@ a {
 }
 
 .logo {
+  z-index: 100;
   animation: rotateZ 2s linear infinite;
 }
 
@@ -51,6 +51,19 @@ a {
   100% {
     transform: rotateY(360deg);
   }
+}
+
+.donate {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  filter: invert(0.5);
+}
+
+.donate:hover {
+  filter: invert(1);
 }
 
 /* Footer */
@@ -68,6 +81,7 @@ a {
   display: flex;
   color: #101820ff;
   margin-top: 3.5em;
+  margin-left: 5em;
 }
 .foot-links a {
   margin: 0 1em;
@@ -186,17 +200,57 @@ a {
   font-weight: bold;
 }
 
+/* Tabs */
+
+.tabs {
+  position: fixed;
+  left: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #101820ff;
+  height: 60%;
+}
+
+.tab-1:hover,
+.tab-2:hover,
+.tab-3:hover,
+.tab-4:hover {
+  filter: invert(1);
+  transform: rotate(360deg);
+}
+
+.tab-1,
+.tab-2,
+.tab-3,
+.tab-4 {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  filter: invert(0.5);
+}
+
 /*Responsive*/
 
 @media only screen and (max-width: 767px) {
   .header {
     padding-bottom: 0;
+    background: transparent;
   }
   .modal-body {
     padding: 1em;
   }
   .modal-title {
     font-size: 1.3em;
+  }
+  .logo {
+    filter: invert(0);
+  }
+  .donate {
+    transform: scale(0.85, 0.85);
   }
   .newModal {
     width: 80%;
@@ -215,10 +269,27 @@ a {
   .newModal form h2 {
     font-size: 1.42rem;
   }
-  .foot-links a {
-    font-size: 0.6em;
+  .footer {
+    display: none;
   }
-  .contribute {
-    font-size: 0.6em;
+  .tabs {
+    z-index: 50;
+    height: 8%;
+    width: 100%;
+    bottom: 0;
+    flex-direction: row;
+    padding: 0.5em;
+  }
+  .tab-1,
+  .tab-2,
+  .tab-3,
+  .tab-4 {
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .tabs {
+    top: 20%;
   }
 }

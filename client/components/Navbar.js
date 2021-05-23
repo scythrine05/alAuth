@@ -11,6 +11,14 @@ export default function Navbar() {
             <Image className="logo" src="/logo.png" height={70} width={60} />
           </div>
         </Link>
+        <div className="donate">
+          <Image
+            className="icon"
+            src="/icons/donate-icon.png"
+            height={35}
+            width={35}
+          />
+        </div>
       </header>
     </>
   );

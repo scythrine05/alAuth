@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import styles from "../styles/Dashboard.module.css";
 import NewProject from "../components/NewProject";
 
@@ -19,15 +17,6 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NewProject show={modalShow} onHide={() => setModalShow(false)} />
-      <div className={styles.profile}>
-        <Image
-          className="icon"
-          src="/icons/profile-icon.png"
-          height={37}
-          width={37}
-        />
-        <span>scythrine05</span>
-      </div>
       <main className={styles.main}>
         <h1 className={styles.title}>
           <span>Your P</span>rojects
@@ -76,9 +65,6 @@ export default function Projects() {
             <span className={styles.opt} onClick={() => setModalShow(true)}>
               New Project
             </span>
-            <Link href="/docs">
-              <span className={styles.opt2}>Docs</span>
-            </Link>
           </div>
         </div>
       </main>

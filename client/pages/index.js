@@ -19,14 +19,6 @@ export default function Home() {
         <title>alAuth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.donate}>
-        <Image
-          className="icon"
-          src="/icons/donate-icon.png"
-          height={35}
-          width={35}
-        />
-      </div>
       <main className={styles.main}>
         <Fade bottom>
           <h1 className={styles.title}>
