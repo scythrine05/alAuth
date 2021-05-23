@@ -53,7 +53,9 @@
   display: flex;
   margin-top: 5vh;
   width: 70%;
+  padding: 2em;
   justify-content: space-between;
+  background: #fff;
 }
 .project {
   width: 55%;
@@ -61,13 +63,13 @@
 
 .each {
   padding: 4vh;
-  font-weight: bold;
   font-family: "Lato";
   height: 39vh;
   margin-bottom: 6vh;
-  background: #fff;
-  box-shadow: -6px 6px #fff;
+  background: #101820ff;
+  box-shadow: -6px 6px #101820ff;
   display: flex;
+  color: #fff;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -116,18 +118,19 @@
   margin-top: 1.5em;
   text-align: center;
   font-size: 2vh;
-  color: #101820ff;
-  border: 2px solid #101820ff;
-  box-shadow: -4px 4px #101820ff;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: -4px 4px #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .show:hover {
+  font-weight: bold;
   box-shadow: none;
-  background: #101820ff;
-  color: #fff;
+  background: #fff;
+  color: #101820ff;
 }
 
 .opt,
@@ -137,19 +140,20 @@
   padding: 2vh;
   text-align: center;
   font-size: 2.6vh;
-  color: #fff;
-  border: 2px solid #fff;
-  box-shadow: -4px 4px #fff;
+  color: #101820ff;
+  border: 2px solid #101820ff;
+  box-shadow: -4px 4px #101820ff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 .opt:hover,
 .opt2:hover {
   box-shadow: none;
-  background: #fff;
-  color: #101820ff;
+  background: #101820ff;
+  color: #fff;
   font-weight: bold;
 }
 

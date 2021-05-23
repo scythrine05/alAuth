@@ -16,9 +16,9 @@ export default function Footer() {
               <p>SiteMap</p>
             </a>
           </Link>
-          <Link href="/contact">
+          <Link href="/about">
             <a target="__blank">
-              <p>Contact</p>
+              <p>About</p>
             </a>
           </Link>
         </div>
