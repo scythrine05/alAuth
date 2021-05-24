@@ -75,6 +75,7 @@ a {
   font-size: 2vh;
   display: flex;
   align-items: center;
+  overflow-y: hidden;
   justify-content: space-between;
 }
 .foot-links {
@@ -283,7 +284,8 @@ a {
   .tab-1,
   .tab-2,
   .tab-3,
-  .tab-4 {
+  .tab-4,
+  .lost {
     transform: scale(0.8, 0.8);
   }
 }
